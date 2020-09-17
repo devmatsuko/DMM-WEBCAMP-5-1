@@ -16,5 +16,10 @@ header nav {
   width: 1024px;
 }
 
+.logo {
+  height: 70px;
+  float: left;
+}
+
 main {
 }
