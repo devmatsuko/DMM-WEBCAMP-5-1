@@ -10,6 +10,11 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1024px;
+  margin: 0 auto; /* 中央寄せ */
+}
+
 /* ヘッダーのCSS */
 header {
   width: 100%;
@@ -17,12 +22,7 @@ header {
   background-color: #ec715f;
 }
 
-.container {
-  width: 1024px;
-  margin: 0 auto; /* 中央寄せ */
-}
-
-.logo {
+header .logo {
   height: 70px;
   float: left; /* 左寄せ */
 }
@@ -31,7 +31,7 @@ header nav {
   float: right; /* 右寄せ */
 }
 
-.nav-item {
+header .nav-item {
   float: left; /* 左寄せ */
   list-style: none; /* リストの「・」を削除 */
   font-size: 16px;
@@ -39,11 +39,6 @@ header nav {
   line-height: 70px; /* 行ボックスの高さ。70px内で上下中央寄せとなる */
 }
 
-.nav-item a {
+header .nav-item a {
   color: #fafafa;
-}
-
-/* mainのCSS */
-
-main {
 }
