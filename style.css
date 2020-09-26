@@ -320,3 +320,17 @@ header .nav-item a {
 .sns-description i:last-child {
   margin-right: 0px;
 }
+
+/* footerのCSS */
+footer .container {
+  width: 100%;
+  height: 60px;
+  background-color: #ec715f;
+  line-height: 60px;
+}
+
+footer p {
+  font-size: 16px;
+  color: #fafafa;
+  text-align: center;
+}
