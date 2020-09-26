@@ -84,6 +84,7 @@ header .nav-item a {
   color: #000000;
   text-align: center; /* 文字列の中央寄せ */
   padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 #portfolio .p-title {
@@ -96,7 +97,6 @@ header .nav-item a {
 
 #portfolio .portfolio-images {
   width: 920px;
-  margin-bottom: 90px;
   margin: 0 auto;
   display: flex; /* Flexboxの利用 */
   flex-wrap: wrap; /* Flexboxの利用時に横幅を超えた要素を折り返す */
@@ -112,7 +112,11 @@ header .nav-item a {
 }
 
 #portfolio .portfolio-image:nth-child(3n) {
-  margin-right: 0px; /* 3の倍数番目の要素のみ外側余白を0pxに */
+  margin-right: 0px; /* 3の倍数番目の要素のみ右側余白を0pxに */
+}
+
+#portfolio .portfolio-image:nth-last-child(-n + 3) {
+  margin-bottom: 0px; /* 最後の行の要素のみ下側余白を0pxに */
 }
 
 #portfolio .portfolio-image1 {
@@ -137,4 +141,58 @@ header .nav-item a {
 
 #portfolio .portfolio-image6 {
   background-image: url(img/webcamp-mother.png);
+}
+
+/* featureのCSS */
+#feature {
+  width: 100%;
+}
+
+#feature .container {
+  color: #000000;
+  text-align: center; /* 文字列の中央寄せ */
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+#feature .f-title {
+  font-size: 32px;
+}
+
+#feature .f-text {
+  margin: 30px auto;
+}
+
+#feature .features {
+  width: 980px;
+  margin: 0 auto;
+  display: flex; /* Flexboxの利用 */
+  flex-wrap: wrap; /* Flexboxの利用時に横幅を超えた要素を折り返す */
+}
+
+#feature .feature {
+  width: 320px;
+  height: auto;
+  margin-right: 10px;
+}
+
+#feature .feature:last-child {
+  margin-right: 0px; /* 3番目の要素のみ右側余白を0pxに */
+}
+
+#feature i {
+  font-size: 60px;
+}
+
+#feature .strength-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  margin: 10px 0px;
+}
+
+#feature .strength-text {
+  font-size: 16px;
+  color: #000000;
+  text-align: left;
 }
