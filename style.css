@@ -221,6 +221,7 @@ header .nav-item a {
 #profile .profile-area {
   width: 1024px;
   display: flex; /* Flexboxの利用 */
+  margin: 0 auto; /* 要素の中央寄せ */
 }
 
 #profile .left-content {
@@ -249,4 +250,73 @@ header .nav-item a {
   font-size: 16px;
   margin-bottom: 20px;
   text-align: left; /* 文字列の左寄せ */
+}
+
+/* contactのCSS */
+#contact {
+  width: 100%;
+}
+
+#contact .container {
+  color: #000000;
+  text-align: center; /* 文字列の中央寄せ */
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+#contact .c-title {
+  font-size: 32px;
+}
+
+#contact .c-text {
+  margin: 30px auto;
+}
+
+#contact .contact-area {
+  width: 800px;
+  display: flex; /* Flexboxの利用 */
+  margin: 0 auto; /* 要素の中央寄せ */
+}
+
+#contact .left-content {
+  width: 400px;
+}
+
+#contact .right-content {
+  width: 400px;
+}
+
+#contact .contact-description {
+  width: 200px;
+  margin: 0 auto; /* 要素の中央寄せ */
+  text-align: left; /* 文字列の左寄せ */
+}
+
+#contact .description-title {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+#contact .description-title:first-child {
+  margin-top: 0px;
+}
+
+#contact .description-link {
+  font-size: 16px;
+}
+
+#contact .sns-description {
+  width: 200px;
+  margin: 0 auto; /* 要素の中央寄せ */
+  text-align: left; /* 文字列の左寄せ */
+}
+
+.sns-description i {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+.sns-description i:last-child {
+  margin-right: 0px;
 }
