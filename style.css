@@ -15,6 +15,13 @@ a {
   margin: 0 auto; /* 中央寄せ */
 }
 
+.title-line {
+  height: 3px;
+  width: 70px;
+  background-color: #ec715f;
+  margin: 8px auto 0px auto;
+}
+
 /* ヘッダーのCSS */
 header {
   width: 100%;
@@ -65,4 +72,69 @@ header .nav-item a {
 
 #main-visual .mv-text {
   font-size: 20px;
+}
+
+/* portfolioのCSS */
+#portfolio {
+  width: 100%;
+  background-color: #eceff1;
+}
+
+#portfolio .container {
+  color: #000000;
+  text-align: center; /* 文字列の中央寄せ */
+  padding-top: 90px;
+}
+
+#portfolio .p-title {
+  font-size: 32px;
+}
+
+#portfolio .p-text {
+  margin: 30px auto;
+}
+
+#portfolio .portfolio-images {
+  width: 920px;
+  margin-bottom: 90px;
+  margin: 0 auto;
+  display: flex; /* Flexboxの利用 */
+  flex-wrap: wrap; /* Flexboxの利用時に横幅を超えた要素を折り返す */
+}
+
+#portfolio .portfolio-image {
+  width: 300px;
+  height: 250px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-position: center; /* 背景画像の中央表示 */
+  background-size: cover; /* 背景画像の画像の縦横比を維持しながら最大化 */
+}
+
+#portfolio .portfolio-image:nth-child(3n) {
+  margin-right: 0px; /* 3の倍数番目の要素のみ外側余白を0pxに */
+}
+
+#portfolio .portfolio-image1 {
+  background-image: url(img/sketch.jpg);
+}
+
+#portfolio .portfolio-image2 {
+  background-image: url(img/websuku.png);
+}
+
+#portfolio .portfolio-image3 {
+  background-image: url(img/write.jpg);
+}
+
+#portfolio .portfolio-image4 {
+  background-image: url(img/webcamp.png);
+}
+
+#portfolio .portfolio-image5 {
+  background-image: url(img/talk.jpg);
+}
+
+#portfolio .portfolio-image6 {
+  background-image: url(img/webcamp-mother.png);
 }
