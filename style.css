@@ -11,7 +11,7 @@ a {
 }
 
 .container {
-  width: 1024px;
+  width: 100%;
   margin: 0 auto; /* 中央寄せ */
 }
 
@@ -24,7 +24,6 @@ a {
 
 /* ヘッダーのCSS */
 header {
-  width: 100%;
   height: 70px;
   background-color: #ec715f;
 }
@@ -333,4 +332,173 @@ footer p {
   font-size: 16px;
   color: #fafafa;
   text-align: center;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+  /* 共通のCSS */
+  .clear-br {
+    display: none;
+  }
+
+  /* ヘッダーのCSS */
+  header {
+    height: 50px;
+  }
+
+  header .container {
+    width: 90%;
+    height: 50px;
+    margin: 0 auto; /* 左右に5pxの余白 */
+  }
+
+  header .logo {
+    height: 50px;
+  }
+
+  header .nav-item {
+    display: none;
+  }
+
+  /* ハンバーガーボタンのCSS */
+  .menu-box {
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin: 5px 0px;
+    margin-right: 5%;
+    border: 1px solid #fafafa;
+  }
+
+  .list-bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    background-color: #fafafa;
+  }
+
+  .list-bar:first-child {
+    margin-top: 10px;
+  }
+
+  /* main-visualのCSS */
+  #main-visual {
+    background-image: url(img/code.png);
+  }
+
+  #main-visual .container {
+    width: 90%;
+  }
+
+  #main-visual .mv-title {
+    font-size: 40px;
+  }
+
+  #main-visual .mv-text {
+    font-size: 18px;
+  }
+
+  /* portfolioのCSS */
+  #portfolio .container {
+    width: 90%;
+  }
+
+  #portfolio .portfolio-images {
+    width: 300px;
+  }
+
+  #portfolio .portfolio-image {
+    margin-right: 0px;
+  }
+
+  #portfolio .portfolio-image:last-child {
+    margin-bottom: 0px; /* 最後の行の要素のみ下側余白を0pxに */
+  }
+
+  #portfolio .portfolio-image1 {
+    display: none;
+  }
+
+  #portfolio .portfolio-image3 {
+    display: none;
+  }
+
+  #portfolio .portfolio-image5 {
+    display: none;
+  }
+
+  /* featureのCSS */
+  #feature .container {
+    width: 90%;
+  }
+
+  #feature .features {
+    width: 320px;
+  }
+
+  #feature .feature {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+
+  /* profileのCSS */
+
+  #profile .container {
+    width: 90%;
+  }
+
+  #profile .profile-area {
+    width: 100%;
+    flex-wrap: wrap; /* Flexboxの利用時に横幅を超えた要素を折り返す */
+  }
+
+  #profile .left-content {
+    width: 100%;
+  }
+
+  #profile .right-content {
+    width: 100%;
+  }
+
+  /* contactのCSS */
+  #contact .container {
+    width: 90%;
+  }
+
+  #contact .contact-area {
+    width: 100%;
+    flex-wrap: wrap; /* Flexboxの利用時に横幅を超えた要素を折り返す */
+  }
+
+  #contact .left-content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #contact .right-content {
+    width: 100%;
+  }
+
+  #contact .contact-description {
+    text-align: center; /* 文字列の中央寄せ */
+  }
+
+  #contact .sns-description {
+    text-align: center; /* 文字列の中央寄せ */
+  }
+
+  /* footerのCSS */
+  footer .container {
+    width: 100%;
+    height: 60px;
+    background-color: #ec715f;
+    line-height: 60px;
+  }
+
+  footer p {
+    font-size: 16px;
+    color: #fafafa;
+    text-align: center;
+  }
 }
