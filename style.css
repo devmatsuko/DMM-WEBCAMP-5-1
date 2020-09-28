@@ -413,7 +413,7 @@ footer p {
   }
 
   #portfolio .portfolio-image:last-child {
-    margin-bottom: 0px; /* 最後の行の要素のみ下側余白を0pxに */
+    margin-bottom: 0px;
   }
 
   #portfolio .portfolio-image1 {
